@@ -2,12 +2,15 @@
 all on one css file */
 
 /* Body */
+
 body {
   margin: 0px 0;
   padding: 0;
   background-color: rgba(32, 33, 36, 1);
- 
+}
 
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Grid */
@@ -49,7 +52,7 @@ body {
   justify-content: space-between;
   overflow: hidden;
   position: fixed;
-  top: 0; 
+  top: 0;
   width: 100%;
 }
 
@@ -57,7 +60,7 @@ body {
 .nav > .text-links {
   display: flex;
   flex-direction: row;
-  margin: 20px -53px 0 0px;
+  margin: 20px -2in 0 0px;
   padding: 0;
   width: 129px;
   justify-content: space-evenly;
@@ -94,10 +97,6 @@ nav > .content-wrapper > .icon > i {
   cursor: pointer;
 }
 
-nav > .content-wrapper > .icon > i:hover {
-  back
-}
-
 /* Positioning individual divs */
 
 /* Google Logo */
@@ -109,6 +108,7 @@ nav > .content-wrapper > .icon > i:hover {
   font-family: "Lexend", sans-serif;
   color: white;
   display: grid;
+  margin: 2.5in 0 38px 0;
 }
 
 /* Input Area */
@@ -144,10 +144,9 @@ nav > .content-wrapper > .icon > i:hover {
   background-color: transparent;
   border: none;
   color: #bdc1c6;
-  transition: 0.4s;
+  transition: 0.4s ease-in-out;
   outline: none;
   cursor: pointer;
-  user-select: none;
 }
 
 .mid-content-container > form > .input-section:hover {
@@ -198,7 +197,8 @@ nav > .content-wrapper > .icon > i:hover {
   grid-area: footer;
   display: flex;
   justify-content: space-between;
-  background-color: #171717;position: fixed; 
+  background-color: #171717;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
